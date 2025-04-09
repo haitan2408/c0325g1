@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="demo.js"></script>
+</head>
+<body>
+<!--<button onclick="this.style.backgroundColor='blue'; this.style.color='white'">Thích</button>-->
+<!--<button onclick="this.style.backgroundColor='blue'" onmouseover="alert('bạn wow hay haha')">Thích</button>-->
+<!--<button>Thích</button>-->
+<!--<button id="like">Thích</button>-->
+
+Toán: <input type="number" id="math">
+Lý: <input type="number" id="phys">
+Hóa: <input type="number" id="chem">
+<button id="calculate">Tính</button>
+
+</body>
+<script>
+    // function likeMe() {
+    //     alert("Like me")
+    // }
+
+   /*  input: 3 môn Toán Lý Hóa lấy từ HTML
+       Output: Hiển thị điểm trung bình
+       Who: HaiTT
+   */
+   document.getElementById("calculate").addEventListener("click", function () {
+       // Kiểm tra điều kiện => nhập lại nếu cần (bài tập làm thêm)
+       let math = +document.getElementById("math").value;
+       let phys = +document.getElementById("phys").value;
+       let chem = +document.getElementById("chem").value;
+       let avg = (math+phys+chem)/3;
+       document.writeln(avg)
+       console.log(math)
+       prompt("bạn ")
+   //     Xét học lực.
+
+
+   })
+</script>
+</html>
